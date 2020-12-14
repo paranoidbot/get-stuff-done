@@ -1,22 +1,19 @@
 <div id="login-form-container">
+  <link rel="stylesheet" href="/css/login_form.css">
+      <div id='login-form-title'>Sign in</div>
 
-      <form id='login-form' method="POST" action="{{ route('post-login') }}">
+      <form id='login-form' method="POST" action="/">
           @csrf
 
-          <div id="email-input">
-              <label for="email">E-Mail Address</label>
-              <input id="email" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-          </div>
+          <label class="login-form-label" for="email">E-Mail Address</label>
+          <input id="email" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
 
-          <div id="password-input">
-              <label for="password">Password</label>
-              <input id="password" type="password" name="password" required autocomplete="current-password">
-          </div>
+          <label class="login-form-label" for="password">Password</label>
+          <input id="password" type="password" name="password" required autocomplete="current-password">
 
-          <div id="submit-button">
-              <button type="submit">Login</button>
-          </div>
+          <button id="submit-button" type="submit">Login</button>
+
 
       </form>
 </div>

@@ -1,0 +1,41 @@
+#login-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+  border: black 2px solid;
+  border-radius: 10px;
+  justify-content: space-around;
+  background-color: lightgray;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: auto;
+}
+
+#login-form > * {
+  width: 95%;
+  margin: auto;
+}
+
+.login-form-label {
+  font-size: 1.5em;
+}
+
+
+#login-form-title {
+  font-size: 3em;
+  padding-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#submit-button {
+  padding: 5px;
+  margin: 20px auto auto auto;
+  border-radius: 10px;
+}

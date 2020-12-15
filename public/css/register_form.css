@@ -1,0 +1,42 @@
+#register-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: auto;
+  padding: 10px;
+  border: black 2px solid;
+  border-radius: 10px;
+  justify-content: space-around;
+  background-color: lightgray;
+}
+
+#register-form {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: auto;
+}
+
+#register-form > * {
+  width: 95%;
+  margin: auto;
+  padding: 3px;
+}
+
+.register-form-label {
+  font-size: 1.5em;
+}
+
+
+#register-form-title {
+  font-size: 3em;
+  padding-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#submit-button {
+  padding: 5px;
+  margin: 20px auto auto auto;
+  border-radius: 10px;
+}

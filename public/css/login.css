@@ -1,0 +1,11 @@
+body {
+  background-image: url("/img/pexels-anete-lusina-4792507-downscaled.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#login-form-container{
+  margin: auto auto;
+}

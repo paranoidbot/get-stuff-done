@@ -2,7 +2,7 @@
   <link rel="stylesheet" href="/css/register_form.css">
       <div id='register-form-title'>Register</div>
 
-      <form id='register-form' method="POST" action="/">
+      <form id='register-form' method="POST" action="/postRegister">
           @csrf
 
           <label class="register-form-label" for="name">Name</label>

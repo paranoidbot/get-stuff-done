@@ -2,7 +2,7 @@
   <link rel="stylesheet" href="/css/login_form.css">
       <div id='login-form-title'>Sign in</div>
 
-      <form id='login-form' method="POST" action="/">
+      <form id='login-form' method="POST" action="/postLogin">
           @csrf
 
           <label class="login-form-label" for="email">E-Mail Address</label>

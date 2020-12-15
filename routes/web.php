@@ -11,6 +11,23 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'HomeController@dashboard');
+
+Route::get('/login', 'HomeController@getLogin');
+
+Route::get('/register' , 'HomeController@getRegister');
+
+Route::post('/postLogin', 'HomeController@postLogin');
+
+Route::post('/postRegister', 'HomeController@postRegister');
+
+Route::get('/logout', 'HomeController@logout');
+
+Route::get('/guest', function()
+{
+  return view('guest_dashboard');
+});
+
+Route::get('/authed', function(){
+  return view('auth_dashboard');
 });

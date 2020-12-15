@@ -1,0 +1,45 @@
+#app-wrapper {
+  background-image: url("/img/pexels-anete-lusina-4792507-downscaled.jpg");
+  height: 100vh;
+}
+
+#main-row {
+  height: 100%;
+}
+
+#login-col{
+  display: flex;
+  align-items: center;
+
+}
+
+#text-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#market-text {
+  background-color: lightgray;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+}
+
+#main-text {
+  font-size: 70px;
+}
+
+#market-text > * {
+  padding: 3px;
+}
+
+#sub-3 {
+  text-decoration: underline;
+}

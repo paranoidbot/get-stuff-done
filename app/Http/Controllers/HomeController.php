@@ -59,9 +59,13 @@ class HomeController extends Controller
       echo "inside getEditTask";
     }
 
-    public function postEditTask()
+    public function postEditTask(Request $request, Task $task)
     {
-      echo "inside postEditTask";
+      if(isset($_POST['delete'])) {
+      $task->delete();
+      return redirect('/');
+      }
+
     }
 
     public function getNewTask(){

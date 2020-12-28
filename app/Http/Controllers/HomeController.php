@@ -52,8 +52,27 @@ class HomeController extends Controller
 
       $user = User::create($input_array);
       return redirect('login');
-
     }
+
+    public function getEditTask()
+    {
+      echo "inside getEditTask";
+    }
+
+    public function postEditTask()
+    {
+      echo "inside postEditTask";
+    }
+
+    public function getNewTask(){
+      echo "inside getNewTask";
+    }
+
+    public function postNewTask()
+    {
+      echo "inside postNewTask";
+    }
+
     public function logout(Request $request){
       $request->session()->flush();
       Auth::logout();

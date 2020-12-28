@@ -23,11 +23,10 @@ Route::post('/postRegister', 'HomeController@postRegister');
 
 Route::get('/logout', 'HomeController@logout');
 
-Route::get('/guest', function()
-{
-  return view('guest_dashboard');
-});
+Route::get('/edit-task/{task}', 'HomeController@getEditTask');
 
-Route::get('/authed', function(){
-  return view('auth_dashboard');
-});
+Route::post('/edit-task/{task}', 'HomeController@postEditTask');
+
+Route::get('/new-task', 'HomeController@getNewTask');
+
+Route::post('/new-task', 'HomeController@postNewTask');

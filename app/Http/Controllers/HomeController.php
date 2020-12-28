@@ -65,7 +65,8 @@ class HomeController extends Controller
     }
 
     public function getNewTask(){
-      echo "inside getNewTask";
+      $user = Auth::user();
+      return view('add', compact('user'));
     }
 
     public function postNewTask()

@@ -17,6 +17,7 @@
 
           <button id="submit-button" type="submit">Register</button>
 
+          <a href="/login">Already registered?</a>
 
       </form>
 </div>

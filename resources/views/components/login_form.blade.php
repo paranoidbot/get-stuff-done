@@ -13,6 +13,8 @@
           <input id="password" type="password" name="password" required autocomplete="current-password">
 
           <button id="submit-button" type="submit">Login</button>
+          
+          <a href="/register">Not registered?</a>
 
 
       </form>

@@ -54,9 +54,16 @@ class HomeController extends Controller
       return redirect('login');
     }
 
-    public function getEditTask()
+    public function getEditTask(Task $task)
     {
-      echo "inside getEditTask";
+      $user = Auth::user();
+      if (Auth::check() && Auth::user()->id == $task->user_id)
+        {
+                return view('edit', compact(['task', 'user']));
+        }
+        else {
+             return redirect('/');
+         }
     }
 
     public function postEditTask(Request $request, Task $task)
@@ -64,6 +71,13 @@ class HomeController extends Controller
       if(isset($_POST['delete'])) {
       $task->delete();
       return redirect('/');
+      }
+
+      else
+      {
+        $task->description = $request->description;
+        $task->save();
+        return redirect('/');
       }
 
     }

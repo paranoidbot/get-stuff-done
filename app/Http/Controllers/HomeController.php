@@ -69,9 +69,13 @@ class HomeController extends Controller
       return view('add', compact('user'));
     }
 
-    public function postNewTask()
+    public function postNewTask(Request $request)
     {
-      echo "inside postNewTask";
+      $task = new Task();
+      $task->description = $request->description;
+      $task->user_id = Auth::id();
+      $task->save();
+      return redirect('/');
     }
 
     public function logout(Request $request){
